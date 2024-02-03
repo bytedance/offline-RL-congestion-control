@@ -1,0 +1,9 @@
+matplotlib
+netron
+numpy
+onnx
+onnxruntime
+torch
+torchaudio
+torchvision
+tqdm

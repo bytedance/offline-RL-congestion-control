@@ -1,0 +1,21 @@
+{
+  "task_name": "finetune_test",
+  "hidden_dim": 256,
+  "buffer_size": 200000,
+  "batch_size": 1024,
+  "total_step": 10000,
+  "evaluate_and_model_save_interval": 1000,
+  "buffer_update_interval": 1000,
+  "final_large_evaluate_step_interval": 10000,
+  "eval_num_limit": 200,
+  "fine_tuned_setting":{
+    "enable_fine_tuned": true,
+    "pretrain_model_path": "../pre_train_eval/pretrain_20240202_2123/model_9000.pt"
+  },
+  "path": {
+    "result_path": "../finetuned_eval",
+    "emulated_dataset_path": "../../train_data/emulated_dataset",
+    "validation_set_path": "../../validation_set",
+    "test_set_path": "../../test_set"
+}
+}
