@@ -1,0 +1,5 @@
+{
+    "emulated_dataset_path": "../../train_data/emulated_dataset",
+    "validation_set_path": "../../validation_set",
+    "test_set_path": "../../test_set"
+}

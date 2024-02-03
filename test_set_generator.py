@@ -16,6 +16,7 @@ import shutil
 import os
 import random
 import glob
+import json
 
 test_json_index = [9308, 6789, 516, 6590, 9297, 6852, 766, 2714, 7296, 1046, 4247, 2583, 7313, 8643, 7983, 9198, 1, 637,
                    8103, 5340, 5112, 7649, 816, 6801, 3080, 8987, 1367, 2138, 241, 6583, 6840, 5180, 55, 3498, 234, 38,
@@ -49,10 +50,14 @@ def prepare_test_and_validation_data_files(emulated_dataset_dir, test_dataset_di
 
 
 if __name__ == "__main__":
+    with open("path_config.json", 'r') as f:
+        path_config = json.load(f)
+
+    emulated_dataset_dir = path_config["emulated_dataset_path"]
+    validation_set_dir = path_config["validation_set_path"]
+    test_dataset_dir = path_config["test_set_path"]
+
     random.seed(666)
-    emulated_dataset_dir = "../../train_data/emulated_dataset"
-    validation_set_dir = "../../validation_set"
-    test_dataset_dir = "../../test_set"
 
     if not os.path.exists(validation_set_dir):
         os.mkdir(validation_set_dir)

@@ -7,3 +7,4 @@ torch
 torchaudio
 torchvision
 tqdm
+pickle
