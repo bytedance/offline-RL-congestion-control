@@ -9,6 +9,9 @@ Before training, the program will split the dataset into train, validation, test
 
 We pre-store the behavior of baseline model for after-train evaluation. The file is baseline_eval.pkl, which is located at './emulated_dataset'. 
 
+Please feel free to contact us if necessary.
+zhangwei.666@bytedance.com
+
 ## Quick Evaluation
 create ./figs directory, then run run_ten_tms_model.py
 
